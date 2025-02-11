@@ -8,7 +8,7 @@ import os
 
 # Initialize the Flask application
 app = Flask(__name__)
-model = load_model('./model.h5')  # Load the pre-trained model
+model = load_model('./modelAPIBackup/model.h5')  # Load the pre-trained model
 app.secret_key = 'supersecretkey'  # Necessary for flash messages
 # Set the upload folder and allowed file extensions
 UPLOAD_FOLDER = 'static/images'
